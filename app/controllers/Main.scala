@@ -145,6 +145,10 @@ Disallow: /games/export
     Ok(html.site.faq()).fuccess
   }
 
+  def offline = Open { implicit ctx =>
+    Ok(html.site.offline()).fuccess
+  }
+
   def movedPermanently(to: String) = Action {
     MovedPermanently(to)
   }
