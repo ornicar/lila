@@ -1,3 +1,19 @@
+@import '../../common/css/theme/default';
+body {
+  --bg-eval-gauge: #fff;
+  --c-eval-gauge-tick: #eee;
+  --c-eval-gauge-tick-zero: fade-out($c-accent, 0.6);
+  --c-eval-gauge-black: #888;
+}
+
+@import '../../common/css/theme/dark';
+@include dark-theme {
+  --bg-eval-gauge: #a0a0a0;
+  --c-eval-gauge-tick: #a0a0a0;
+  --c-eval-gauge-tick-zero: fade-out($c-accent, 0.6);
+  --c-eval-gauge-black: #666;
+}
+
 main {
   @include fluid-size('--gauge-gap', 8px, 17px);
 }
@@ -5,8 +21,8 @@ main {
 .eval-gauge {
   width: var(--gauge-gap);
   position: relative;
-  background: if($theme-light, #fff, #a0a0a0);
   overflow: hidden;
+  background: var(--bg-eval-gauge);
 
   @include breakpoint($mq-col1-uniboard) {
     display: none;
@@ -32,21 +48,21 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 2px ridge if($theme-light, #eee, #a0a0a0);
+    border-bottom: 2px ridge var(--c-eval-gauge-tick);
     opacity: 0.4;
   }
 
   tick.zero {
     top: 6px;
     opacity: 1;
-    border-bottom: 7px solid fade-out($c-accent, 0.6);
+    border-bottom: 7px solid var(--c-eval-gauge-tick-zero);
     margin-top: -3px;
   }
 
   .black {
     width: 100%;
     height: 50%;
-    background: if($theme-light, #888, #666);
+    background: var(--c-eval-gauge-black);
     transition: height 1s;
   }
 }

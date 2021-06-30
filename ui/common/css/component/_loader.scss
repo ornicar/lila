@@ -1,3 +1,5 @@
+@import '../../../common/css/theme/mixins';
+
 /* circular loader */
 @keyframes spinner-rotate {
   100% {
@@ -79,10 +81,10 @@
 }
 
 .ddloader {
-  @if $theme-light {
+  background: img-url('loader/whitex1.png') no-repeat;
+
+  @include light-theme {
     background: img-url('loader/blackx1.png') no-repeat;
-  } @else {
-    background: img-url('loader/whitex1.png') no-repeat;
   }
 
   animation: ddloader 0.5s steps(15) infinite;

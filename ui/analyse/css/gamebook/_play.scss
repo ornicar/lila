@@ -1,3 +1,4 @@
+@import '../../../common/css/theme/mixins';
 @import 'common';
 
 @keyframes rubberBand {
@@ -47,7 +48,7 @@
     /* fixes firefox overflow when comment is long https://stackoverflow.com/questions/28636832/firefox-overflow-y-not-working-with-nested-flexbox */
     min-height: 0;
 
-    @if $theme-dark {
+    @include dark-theme {
       border: 1px solid $c-font-dimmer;
     }
 

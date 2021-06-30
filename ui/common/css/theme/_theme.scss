@@ -1,0 +1,219 @@
+@import 'mixins';
+@import 'default';
+
+body {
+  --c-bg-page: $c-bg-page;
+
+  --c-bg-high: $c-bg-high;
+  --c-bg-low: $c-bg-low;
+
+  --c-bg-zebra: $c-bg-zebra;
+  --c-bg-zebra2: $c-bg-zebra2;
+
+  --c-body-gradient: $c-body-gradient;
+
+  --c-font: $c-font;
+  --c-font-dim: $c-font-dim;
+  --c-font-dimmer: $c-font-dimmer;
+  --c-font-clear: $c-font-clear;
+  --c-font-clearer: $c-font-clearer;
+  --c-shade: $c-shade;
+  --c-font-page: $c-font-page;
+
+  --c-primary: $c-primary;
+  --c-primary-dim: $c-primary-dim;
+  --c-primary-clear: $c-primary-clear;
+  --c-primary-over: $c-primary-over;
+
+  --c-secondary: $c-secondary;
+  --c-secondary-dim: $c-secondary-dim;
+  --c-secondary-dimmer: $c-secondary-dimmer;
+  --c-secondary-over: $c-secondary-over;
+
+  --c-accent: $c-accent;
+  --c-accent-dim: $c-accent-dim;
+  --c-accent-clear: $c-accent-clear;
+  --c-accent-over: $c-accent-over;
+
+  --c-brag: $c-brag;
+  --c-brag-over: $c-brag-over;
+
+  --c-red: $c-red;
+  --c-error: $c-error;
+  --c-error-over: $c-error-over;
+
+  --c-good: $c-good;
+  --c-good-over: $c-good-over;
+
+  --c-warn: $c-warn;
+  --c-warn-over: $c-warn-over;
+
+  --c-bad: $c-bad;
+  --c-bad-over: $c-bad-over;
+
+  --c-fancy: $c-fancy;
+  --c-fancy-over: $c-fancy-over;
+
+  --c-link: $c-link;
+  --c-link-dim: $c-link-dim;
+  --c-link-clear: $c-link-clear;
+  --c-link-hover: $c-link-hover;
+  --c-link-over: $c-link-over;
+
+  --c-bg-box: $c-bg-box;
+  --c-bg-box-opaque: $c-bg-box-opaque;
+  --c-bg-input: $c-bg-input;
+
+  --c-border: $c-border;
+  --c-border-page: $c-border-page;
+
+  --c-page-mask: $c-page-mask;
+
+  --c-bg-popup: $c-bg-popup;
+  --c-popup: $c-popup;
+
+  --c-bg-header-dropdown: $c-bg-header-dropdown;
+  --c-header-dropdown: $c-header-dropdown;
+
+  --c-font-shadow: $c-font-shadow;
+  --text-shadow: $text-shadow;
+
+  --c-bot: $c-bot;
+
+  --c-page-input: $c-page-input;
+
+  --bg-metal: $bg-metal;
+  --bg-metal-hover: $bg-metal-hover;
+  --c-metal-hover: $c-metal-hover;
+  --bg-page-metal: $bg-page-metal;
+  --bg-page-metal-hover: $bg-page-metal-hover;
+
+  --bg-lobby-pool: $bg-lobby-bool;
+
+  --border-width: $border-width;
+  --border-style: $border-style;
+  --border: $border;
+
+  --box-shadow: $box-shadow;
+}
+
+@import 'dark';
+
+@include dark-theme {
+  --c-bg-page: $c-bg-page;
+  --c-bg-high: $c-bg-high;
+  --c-bg-low: $c-bg-low;
+
+  --c-bg-zebra: $c-bg-zebra;
+  --c-bg-zebra2: $c-bg-zebra2;
+
+  --c-body-gradient: $c-body-gradient;
+
+  --c-font: $c-font;
+  --c-font-dim: $c-font-dim;
+  --c-font-dimmer: $c-font-dimmer;
+  --c-font-clear: $c-font-clear;
+  --c-font-clearer: $c-font-clearer;
+  --c-shade: $c-shade;
+  --c-font-page: $c-font-page;
+
+  --c-primary: $c-primary;
+  --c-primary-dim: $c-primary-dim;
+  --c-primary-clear: $c-primary-clear;
+
+  --c-secondary: $c-secondary;
+  --c-secondary-dim: $c-secondary-dim;
+  --c-secondary-dimmer: $c-secondary-dimmer;
+
+  --c-brag: $c-brag;
+
+  --c-fancy: $c-fancy;
+
+  --c-good: $c-good;
+  --c-good-over: $c-good-over;
+
+  --c-warn: $c-warn;
+  --c-warn-over: $c-warn-over;
+
+  --c-link: $c-link;
+  --c-link-dim: $c-link-dim;
+  --c-link-clear: $c-link-clear;
+  --c-link-hover: $c-link-hover;
+
+  --c-bg-box: $c-bg-box;
+  --c-bg-box-opaque: $c-bg-box-opaque;
+  --c-bg-input: $c-bg-input;
+
+  --c-bg-popup: $c-bg-popup;
+  --c-popup: $c-popup;
+
+  --c-bg-header-dropdown: $c-bg-header-dropdown;
+  --c-header-dropdown: $c-header-dropdown;
+
+  --c-bot: $c-bot;
+
+  --c-page-input: $c-page-input;
+
+  --bg-metal: $bg-metal;
+  --bg-metal-hover: $bg-metal-hover;
+  --c-metal-hover: $c-metal-hover;
+  --bg-page-metal: $bg-page-metal;
+  --bg-page-metal-hover: $bg-page-metal-hover;
+
+  --bg-lobby-pool: $bg-lobby-bool;
+
+  --c-border: $c-border;
+  --c-border-page: $c-border-page;
+  --border: $border;
+
+  --c-font-shadow: $c-font-shadow;
+  --text-shadow: $text-shadow;
+}
+
+@import 'transp';
+
+@include transp-theme {
+  --c-bg-high: $c-bg-high;
+  --c-bg-low: $c-bg-low;
+
+  --c-font: $c-font;
+  --c-font-dim: $c-font-dim;
+  --c-font-dimmer: $c-font-dimmer;
+  --c-font-clear: $c-font-clear;
+  --c-font-clearer: $c-font-clearer;
+  --c-font-page: $c-font-page;
+
+  --c-bg-box: $c-bg-box;
+  --c-bg-zebra: $c-bg-zebra;
+  --c-bg-input: $c-bg-input;
+
+  --c-bg-popup: $c-bg-popup;
+
+  --c-bg-header-dropdown: $c-bg-header-dropdown;
+
+  --c-page-input: $c-page-input;
+
+  --text-shadow: $text-shadow;
+
+  --bg-metal: $bg-metal;
+  --bg-metal-hover: $bg-metal-hover;
+  --c-metal-hover: $c-metal-hover;
+  --bg-page-metal: $bg-page-metal;
+  --bg-page-metal-hover: $bg-page-metal-hover;
+
+  --bg-lobby-pool: $bg-lobby-bool;
+}
+
+body.transp::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}

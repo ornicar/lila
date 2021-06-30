@@ -1,6 +1,6 @@
 .simul-list {
   &__help {
-    @extend %page-text-shadow !optional;
+    @extend %page-text-shadow;
 
     color: $c-font-page;
     max-width: 350px;

@@ -1,3 +1,4 @@
+@import 'theme';
 @import 'layout';
 @import 'app/app';
 @import 'table';
@@ -69,7 +70,7 @@ body {
 }
 
 .about-side {
-  @extend %page-text-shadow !optional;
+  @extend %page-text-shadow;
 
   margin-top: $block-gap;
 }
@@ -87,7 +88,7 @@ body {
 }
 
 .lobby__puzzle .text {
-  @extend %page-text-shadow !optional;
+  @extend %page-text-shadow;
 
   color: $c-font-dim;
   display: block;

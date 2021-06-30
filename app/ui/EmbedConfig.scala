@@ -17,7 +17,7 @@ object EmbedConfig {
 
   def apply(req: RequestHeader): EmbedConfig =
     EmbedConfig(
-      bg = get("bg", req).filterNot("auto".==) | "light",
+      bg = get("bg", req).filterNot("auto".==) | "system",
       board = lila.pref.Theme(~get("theme", req)).cssClass,
       lang = lila.i18n.I18nLangPicker(req, none),
       req = req,

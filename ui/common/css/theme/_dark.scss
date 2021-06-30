@@ -1,10 +1,3 @@
-@import 'default';
-
-$theme: 'dark';
-$color-scheme: 'dark';
-$theme-light: false;
-$theme-dark: true;
-
 @function c-dimmer($color, $weight: 20%) {
   @return mix(#000, $color, $weight);
 }
@@ -55,10 +48,6 @@ $c-good-over: $c-secondary-over;
 $c-warn: $c-brag;
 $c-warn-over: $c-brag-over;
 
-/* Bad: red */
-$c-bad: $c-error;
-$c-bad-over: $c-error-over;
-
 $c-link: $c-primary;
 $c-link-dim: $c-primary-dim;
 $c-link-clear: $c-primary-clear;
@@ -78,33 +67,15 @@ $c-bot: $c-fancy;
 
 $c-page-input: $c-bg-box;
 
+$bg-metal: linear-gradient(to bottom, hsl($c-site-hue, 7%, 22), hsl($c-site-hue, 5%, 19) 100%);
+$bg-metal-hover: linear-gradient(to bottom, hsl($c-site-hue, 7%, 25), hsl($c-site-hue, 5%, 22) 100%);
+$c-metal-hover: $c-font-clear;
+$bg-metal-page: $bg-metal;
+$bg-page-metal-hover: $bg-metal-hover;
+
 $c-border: hsl(0, 0%, 25%);
 $c-border-page: hsl(0, 0%, 22%);
 $border: $border-width $border-style $c-border;
 
 $c-font-shadow: black;
 $text-shadow: none;
-
-@mixin metal-bg {
-  background: linear-gradient(to bottom, hsl($c-site-hue, 7%, 22), hsl($c-site-hue, 5%, 19) 100%);
-}
-
-@mixin metal {
-  @include metal-bg;
-}
-
-@mixin metal-hover {
-  background: linear-gradient(to bottom, hsl($c-site-hue, 7%, 25), hsl($c-site-hue, 5%, 22) 100%);
-  color: $c-font-clear;
-}
-
-@mixin page-metal {
-  @include metal;
-}
-
-@mixin page-metal-hover {
-  @include metal-hover;
-}
-
-@mixin theme-style {
-}

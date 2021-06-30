@@ -1,0 +1,26 @@
+@mixin dark-theme {
+  @media (prefers-color-scheme: dark) {
+    // 'html' is to raise the specificity
+    html body.system #{if(&, "&", "")} {
+      @content;
+    }
+  }
+
+  body.dark #{if(&, "&", "")},
+  body.transp #{if(&, "&", "")} {
+    @content;
+  }
+}
+
+@mixin light-theme {
+  body.light #{if(&, "&", "")},
+  body.system #{if(&, "&", "")} {
+    @content;
+  }
+}
+
+@mixin transp-theme {
+  html body.transp #{if(&, "&", "")} {
+    @content;
+  }
+}

@@ -36,38 +36,28 @@ $c-font-page: c-light($c-font, 37%);
 $c-primary: hsl(209, 77%, 46%);
 $c-primary-dim: c-dimmer($c-primary);
 $c-primary-clear: c-clearer($c-primary);
-$c-primary-over: #fff;
-
-/* text over primary background */
+$c-primary-over: #fff; // text over primary background
 
 /* Secondary: green */
 $c-secondary: hsl(88, 62%, 37%);
 $c-secondary-dim: c-dimmer($c-secondary);
 $c-secondary-dimmer: c-dimmer($c-secondary, 40%);
-$c-secondary-over: #fff;
-
-/* text over secondary background */
+$c-secondary-over: #fff; // text over secondary background
 
 /* Accent: orange */
 $c-accent: hsl(22, 100%, 42%);
 $c-accent-dim: c-dimmer($c-accent);
 $c-accent-clear: c-clearer($c-accent);
-$c-accent-over: #fff;
-
-/* text over accent background */
+$c-accent-over: #fff; // text over accent background
 
 /* Brag: gold */
 $c-brag: hsl(37, 74%, 48%);
-$c-brag-over: #fff;
-
-/* text over brag background */
+$c-brag-over: #fff; // text over brag background
 
 /* Error: red */
 $c-red: hsl(0, 60%, 50%);
 $c-error: $c-red;
-$c-error-over: #fff;
-
-/* text over brag background */
+$c-error-over: #fff; // text over brag background
 
 /* Good: green */
 $c-good: $c-secondary;
@@ -83,9 +73,7 @@ $c-bad-over: $c-error-over;
 
 /* Fancy: pink */
 $c-fancy: hsl(294, 61%, 62%);
-$c-fancy-over: white;
-
-/* text over brag background */
+$c-fancy-over: white; // text over fancy background
 
 $c-link: $c-primary;
 $c-link-dim: $c-primary-dim;
@@ -115,6 +103,20 @@ $c-bot: $c-fancy;
 
 $c-page-input: $c-bg-low;
 
+$bg-metal: linear-gradient(to bottom, hsl(0, 0, 96) 0%, hsl(0, 0, 93) 100%);
+$bg-metal-hover: linear-gradient(to bottom, hsl(0, 0, 98) 0%, hsl(0, 0, 95) 100%);
+$c-metal-hover: unset;
+$bg-metal-page: linear-gradient(
+  to bottom,
+  mix($c-link, hsl(0, 0%, 100%), 20%) 0%,
+  mix($c-link, hsl(0, 0%, 94%), 20%) 100%
+);
+$bg-page-metal-hover: linear-gradient(
+  to bottom,
+  mix($c-link, #fff, 25%) 0%,
+  mix($c-link, c-light($c-bg-page, 90%), 25%) 100%
+);
+
 /* Borders */
 
 $border-width: 1px;
@@ -124,5 +126,3 @@ $border: $border-width $border-style $c-border;
 /* Shadows */
 
 $box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-
-// $box-shadow: 0 2px 2px 0 rgba(0,0,0,.157);

@@ -180,7 +180,6 @@ object layout {
   private val dataNonce         = attr("data-nonce")
   private val dataAnnounce      = attr("data-announce")
   val dataSoundSet              = attr("data-sound-set")
-  val dataTheme                 = attr("data-theme")
   val dataAssetUrl              = attr("data-asset-url")
   val dataAssetVersion          = attr("data-asset-version")
   val dataDev                   = attr("data-dev")
@@ -214,9 +213,9 @@ object layout {
           },
           cssTag("site"),
           ctx.pref.is3d option cssTag("board-3d"),
-          ctx.pageData.inquiry.isDefined option cssTagNoTheme("mod.inquiry"),
-          ctx.userContext.impersonatedBy.isDefined option cssTagNoTheme("mod.impersonate"),
-          ctx.blind option cssTagNoTheme("blind"),
+          ctx.pageData.inquiry.isDefined option cssTag("mod.inquiry"),
+          ctx.userContext.impersonatedBy.isDefined option cssTag("mod.impersonate"),
+          ctx.blind option cssTag("blind"),
           moreCss,
           pieceSprite,
           meta(
@@ -267,7 +266,6 @@ object layout {
           dataAssetUrl := netConfig.assetBaseUrl,
           dataAssetVersion := assetVersion.value,
           dataNonce := ctx.nonce.ifTrue(sameAssetDomain).map(_.value),
-          dataTheme := ctx.currentBg,
           dataAnnounce := AnnounceStore.get.map(a => safeJsonValue(a.json)),
           style := zoomable option s"--zoom:${ctx.zoom}"
         )(

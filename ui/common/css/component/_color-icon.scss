@@ -1,19 +1,21 @@
+@import '../../../common/css/theme/mixins';
+
 .color-icon {
-  @if $theme-light {
+  &.white::before {
+    content: '';
+  }
+
+  &.black::before {
+    content: '';
+  }
+
+  @include light-theme {
     &.white::before {
       content: '';
     }
 
     &.black::before {
       content: '';
-    }
-  } @else {
-    &.white::before {
-      content: '';
-    }
-
-    &.black::before {
-      content: '';
     }
   }
 

@@ -10,7 +10,7 @@
     }
 
     select {
-      @extend %page-link !optional;
+      @extend %page-link;
 
       width: 100%;
 
@@ -50,7 +50,7 @@
       justify-content: stretch;
 
       .button {
-        @extend %page-link !optional;
+        @extend %page-link;
 
         width: 100%;
         text-align: left;

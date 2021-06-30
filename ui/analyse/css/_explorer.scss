@@ -1,3 +1,5 @@
+@import '../../common/css/theme/mixins';
+
 .explorer-box {
   position: relative;
   flex: 2.5 1 0px;
@@ -100,27 +102,42 @@
   }
 
   .white {
-    background: if($theme-light, #fff, #ccc);
-    box-shadow: 0 -5px 7px rgba(0, 0, 0, if($theme-light, 0.1, 0.25)) inset;
+    background: #fff;
+    box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.1) inset;
 
-    @if $theme-dark {
+    @include dark-theme {
       color: #222;
+      background: #ccc;
+      box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.25) inset;
     }
   }
 
   .draws,
   .black {
-    color: if($theme-light, #fff, #ddd);
-    box-shadow: 0 5px 7px rgba(255, 255, 255, if($theme-light, 0.2, 0.1)) inset;
+    color: #fff;
+    box-shadow: 0 5px 7px rgba(255, 255, 255, 0.2) inset;
+
+    @include dark-theme {
+      color: #ddd;
+      box-shadow: 0 5px 7px rgba(255, 255, 255, 0.1) inset;
+    }
   }
 
   .draws {
-    background: if($theme-light, #a0a0a0, #666);
+    background: #a0a0a0;
+
+    @include dark-theme {
+      background: #666;
+    }
   }
 
   .black {
-    background: if($theme-light, #555, #333);
+    background: #555;
     color: #ddd;
+
+    @include dark-theme {
+      background: #333;
+    }
   }
 
   .bar span:first-child {

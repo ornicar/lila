@@ -24,11 +24,9 @@
     align-items: center;
     cursor: pointer;
     border: $border;
-
-    @if $theme-light {
-      background: fade-out($c-bg-box, 0.5);
-    }
-    @else {
+    
+    background: fade-out($c-bg-box, 0.5);
+    @include dark-theme {
       background: fade-out($c-font, 0.95);
     }
 

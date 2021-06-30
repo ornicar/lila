@@ -1,3 +1,5 @@
+@import '../../common/css/theme/mixins';
+
 .lobby__spotlights {
   @extend %box-neat-force;
 
@@ -38,13 +40,13 @@
     color: #fff;
     font-size: 42px;
 
-    @if $theme-light {
+    @include light-theme {
       text-shadow: 1px 1px 2px $c-link;
     }
   }
 
   img.img.icon {
-    @if $theme-light {
+    @include light-theme {
       filter: drop-shadow(1px 1px 1px $c-link);
     }
   }

@@ -27,6 +27,7 @@ interface Background {
 
 export function ctrl(data: BackgroundData, trans: Trans, redraw: Redraw, close: Close): BackgroundCtrl {
   const list: Background[] = [
+    { key: 'system', name: trans.noarg('systemDefault') },
     { key: 'light', name: trans.noarg('light') },
     { key: 'dark', name: trans.noarg('dark') },
     { key: 'darkBoard', name: 'Dark Board', title: 'Like Dark, but chess boards are also darker' },
@@ -126,17 +127,6 @@ function applyBackground(data: BackgroundData, list: Background[]) {
   $('body')
     .removeClass([...list.map(b => b.key), 'dark-board'].join(' '))
     .addClass(cls);
-
-  const prev = $('body').data('theme'),
-    sheet = key == 'darkBoard' ? 'dark' : key;
-  $('body').data('theme', sheet);
-  $('link[href*=".' + prev + '."]').each(function (this: HTMLLinkElement) {
-    const link = document.createElement('link') as HTMLLinkElement;
-    link.rel = 'stylesheet';
-    link.href = this.href.replace('.' + prev + '.', '.' + sheet + '.');
-    link.onload = () => setTimeout(() => this.remove(), 100);
-    document.head.appendChild(link);
-  });
 
   if (key === 'transp') {
     const bgData = document.getElementById('bg-data');

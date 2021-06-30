@@ -1,3 +1,5 @@
+@import '../theme/mixins';
+
 %base-font-fallback {
   font-family: 'Noto Sans', Sans-Serif;
 }
@@ -38,34 +40,46 @@
   color: $c-font-page;
 }
 
+%page-text-shadow {
+  @include transp-theme {
+    text-shadow: var(--text-shadow);
+  }
+}
+
 %page-text {
-  @extend %page-font, %page-text-shadow !optional;
+  @extend %page-font, %page-text-shadow;
 }
 
 %page-link {
-  @extend %page-link-font !optional;
-
-  @extend %page-text-shadow !optional;
-}
-
-%metal {
-  @include metal;
-}
-
-%metal-hover {
-  @include metal-hover;
-}
-
-%page-metal {
-  @include page-metal;
-}
-
-%page-metal-hover {
-  @include page-metal;
+  @include transp-theme {
+    color: var(--c-font-clearer);
+  }
 }
 
 %metal-bg {
-  @include metal-bg;
+  background: var(--bg-metal);
+}
+
+%metal {
+  @extend %metal-bg;
+
+  text-shadow: var(--text-shadow);
+}
+
+%metal-hover {
+  background: var(--bg-metal-hover);
+  color: var(--c-metal-hover);
+  text-shadow: var(--text-shadow);
+}
+
+%page-metal {
+  background: var(--bg-page-metal);
+  text-shadow: var(--text-shadow);
+}
+
+%page-metal-hover {
+  background: var(--bg-page-metal-hover);
+  text-shadow: var(--text-shadow);
 }
 
 %active-inset-shadow {

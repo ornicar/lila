@@ -10,7 +10,7 @@
 
   &__player {
     @extend %flex-between-nowrap;
-    @extend %page-text-shadow !optional;
+    @extend %page-text-shadow;
 
     padding: 3px 2px 0 2px;
 

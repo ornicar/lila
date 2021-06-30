@@ -178,7 +178,7 @@
   }
 
   .what_next > p {
-    @extend %page-text-shadow !optional;
+    @extend %page-text-shadow;
     width: 100%;
     text-align: center;
     margin: 20px 0;

@@ -214,7 +214,7 @@ $mq-col3: $mq-x-large;
     }
 
     .explanation {
-      @extend %page-text-shadow !optional;
+      @extend %page-text-shadow;
     }
 
     .coord-trainer__score,
