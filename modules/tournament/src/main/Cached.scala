@@ -47,16 +47,17 @@ final private[tournament] class Cached(
     }
 
   // only applies to ongoing tournaments
-  private val ongoingRanking = cacheApi[Tournament.ID, Ranking](64, "tournament.ongoingRanking") {
-    _.expireAfterWrite(3 seconds)
-      .buildAsyncFuture(playerRepo.computeRanking)
-  }
+  private[tournament] val ongoingRanking =
+    cacheApi[Tournament.ID, OngoingRanking](64, "tournament.ongoingRanking") {
+      _.expireAfterAccess(10 minutes)
+        .buildAsyncFuture(playerRepo.computeOngoingRanking)
+    }
 
   // only applies to finished tournaments
   private val finishedRanking = cacheApi[Tournament.ID, Ranking](1024, "tournament.finishedRanking") {
     _.expireAfterAccess(1 hour)
       .maximumSize(2048)
-      .buildAsyncFuture(playerRepo.computeRanking)
+      .buildAsyncFuture(playerRepo.computeFinishedRanking)
   }
 
   object battle {

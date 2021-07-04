@@ -230,13 +230,14 @@ final class PlayerRepo(coll: Coll)(implicit ec: scala.concurrent.ExecutionContex
     coll.find(selectTour(tourId)).sort(bestSort).one[Player]
 
   // freaking expensive (marathons)
-  private[tournament] def computeRanking(tourId: Tournament.ID): Fu[Ranking] =
+  private[tournament] def computeFinishedRanking(tourId: Tournament.ID): Fu[Ranking] =
     coll
       .aggregateWith[Bdoc]() { framework =>
         import framework._
         List(Match(selectTour(tourId)), Sort(Descending("m")), Group(BSONNull)("uids" -> PushField("uid")))
       }
       .headOption map {
+      import Ranking.implicits._
       _ ?? {
         _ get "uids" match {
           case Some(BSONArray(uids)) =>
@@ -247,12 +248,28 @@ final class PlayerRepo(coll: Coll)(implicit ec: scala.concurrent.ExecutionContex
               b += (u.asInstanceOf[BSONString].value -> r)
               r = r + 1
             }
-            b.result()
-          case _ => Map.empty
+            new FinishedRanking(b.result())
+          case _ => Ranking.empty
         }
       }
     }
 
+  private[tournament] def computeOngoingRanking(tourId: Tournament.ID): Fu[OngoingRanking] =
+    coll
+      .find(
+        selectTour(tourId),
+        $doc("_id" -> false, "m" -> true, "uid" -> true).some
+      )
+      .cursor[Bdoc]()
+      .list()
+      .map(docs =>
+        OngoingRanking.from(docs.flatMap { p: Bdoc =>
+          for {
+            id    <- p.getAsOpt[User.ID]("u")
+            magic <- p.int("m")
+          } yield UserIdWithMagicScore(id, magic)
+        })
+      )
   def computeRankOf(player: Player): Fu[Int] =
     coll.countSel(selectTour(player.tourId) ++ $doc("m" $gt player.magicScore))
 
