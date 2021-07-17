@@ -98,32 +98,32 @@ Thank you all, you rock!"""
         }
       ).flatten,
       List( // yearly tournaments!
-        secondWeekOf(JANUARY).withDayOfWeek(MONDAY)      -> Bullet,
-        secondWeekOf(FEBRUARY).withDayOfWeek(TUESDAY)    -> SuperBlitz,
-        secondWeekOf(MARCH).withDayOfWeek(WEDNESDAY)     -> Blitz,
-        secondWeekOf(APRIL).withDayOfWeek(THURSDAY)      -> Rapid,
-        secondWeekOf(MAY).withDayOfWeek(FRIDAY)          -> Classical,
-        secondWeekOf(JUNE).withDayOfWeek(SATURDAY)       -> HyperBullet,
-        secondWeekOf(JULY).withDayOfWeek(MONDAY)         -> Bullet,
-        secondWeekOf(AUGUST).withDayOfWeek(TUESDAY)      -> SuperBlitz,
-        secondWeekOf(SEPTEMBER).withDayOfWeek(WEDNESDAY) -> Blitz,
-        secondWeekOf(OCTOBER).withDayOfWeek(THURSDAY)    -> Rapid,
-        secondWeekOf(NOVEMBER).withDayOfWeek(FRIDAY)     -> Classical,
-        secondWeekOf(DECEMBER).withDayOfWeek(SATURDAY)   -> HyperBullet
+        secondWeekOf(JANUARY).withDayOfWeek(SUNDAY)      -> Bullet,
+        secondWeekOf(FEBRUARY).withDayOfWeek(SUNDAY)    -> SuperBlitz,
+        secondWeekOf(MARCH).withDayOfWeek(SUNDAY)     -> Blitz,
+        secondWeekOf(APRIL).withDayOfWeek(SUNDAY)      -> Rapid,
+        secondWeekOf(MAY).withDayOfWeek(SUNDAY)          -> Classical,
+        secondWeekOf(JUNE).withDayOfWeek(SUNDAY)       -> HyperBullet,
+        secondWeekOf(JULY).withDayOfWeek(SUNDAY)         -> Bullet,
+        secondWeekOf(AUGUST).withDayOfWeek(SUNDAY)      -> SuperBlitz,
+        secondWeekOf(SEPTEMBER).withDayOfWeek(SUNDAY) -> Blitz,
+        secondWeekOf(OCTOBER).withDayOfWeek(SUNDAY)    -> Rapid,
+        secondWeekOf(NOVEMBER).withDayOfWeek(SUNDAY)     -> Classical,
+        secondWeekOf(DECEMBER).withDayOfWeek(SUNDAY)   -> HyperBullet
       ).flatMap { case (day, speed) =>
         at(day, 17) filter farFuture.isAfter map { date =>
           Schedule(Yearly, speed, Standard, none, date).plan
         }
       },
       List( // yearly variant tournaments!
-        secondWeekOf(JANUARY).withDayOfWeek(WEDNESDAY) -> Chess960,
-        secondWeekOf(FEBRUARY).withDayOfWeek(THURSDAY) -> Crazyhouse,
-        secondWeekOf(MARCH).withDayOfWeek(FRIDAY)      -> KingOfTheHill,
+        secondWeekOf(JANUARY).withDayOfWeek(SATURDAY) -> Chess960,
+        secondWeekOf(FEBRUARY).withDayOfWeek(SATURDAY) -> Crazyhouse,
+        secondWeekOf(MARCH).withDayOfWeek(SATURDAY)      -> KingOfTheHill,
         secondWeekOf(APRIL).withDayOfWeek(SATURDAY)    -> RacingKings,
-        secondWeekOf(MAY).withDayOfWeek(MONDAY)        -> Antichess,
-        secondWeekOf(JUNE).withDayOfWeek(TUESDAY)      -> Atomic,
-        secondWeekOf(JULY).withDayOfWeek(WEDNESDAY)    -> Horde,
-        secondWeekOf(AUGUST).withDayOfWeek(THURSDAY)   -> ThreeCheck
+        secondWeekOf(MAY).withDayOfWeek(SATURDAY)        -> Antichess,
+        secondWeekOf(JUNE).withDayOfWeek(SATURDAY)      -> Atomic,
+        secondWeekOf(JULY).withDayOfWeek(SATURDAY)    -> Horde,
+        secondWeekOf(AUGUST).withDayOfWeek(SATURDAY)   -> ThreeCheck
       ).flatMap { case (day, variant) =>
         at(day, 17) filter farFuture.isAfter map { date =>
           Schedule(Yearly, SuperBlitz, variant, none, date).plan
