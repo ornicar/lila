@@ -57,6 +57,16 @@
     <item quantity="other">%s покани в изчакване</item>
   </plurals>
   <string name="noPendingInvitations">Няма покани в изчакване</string>
+  <string name="onlyVisibleToTeachers">Да се вижда само от учители на класа</string>
+  <string name="lastActiveDate">Активен</string>
+  <string name="managed">Управляван</string>
+  <string name="thisStudentAccountIsManaged">Този учебен акаунт е управляван</string>
+  <string name="upgradeFromManaged">Смени от управляван към автономен</string>
+  <string name="release">Дипломирай</string>
+  <string name="releaseTheAccount">Дипломирай акаунта, за да може ученикът да го управлява автономно.</string>
+  <string name="releaseDesc1">Дипломиран акаунт не може да бъде управляван отново. Ученикът ще може да управлява режима за деца и да смени паролата си.</string>
+  <string name="releaseDesc2">Ученикът ще остане в класа след дипломирането на акаунта.</string>
+  <string name="realUniqueEmail">Истински, уникален имейл адрес на ученика. Ще му изпратим имейл за потвърждение с линк за дипломиране на акаунта.</string>
   <string name="closeStudent">Закриване на регистрацията</string>
   <string name="closeTheAccount">Постоянно закриване на регистрацията на ученика.</string>
   <string name="closeDesc1">Ученикът няма никога вече да може да използва тази регистрация. Затварянето е постоянно. Уверете се че ученикът разбира и се съгласява с това.</string>
@@ -74,5 +84,17 @@
   <string name="progress">Напредък</string>
   <string name="noStudents">В този клас все още няма ученици.</string>
   <string name="noRemovedStudents">Няма премахнати ученици.</string>
+  <string name="overDays">За дни</string>
+  <string name="timePlaying">Играно време</string>
+  <string name="variantXOverLastY">%1$s за последните %2$s</string>
+  <string name="winrate">Процент на победи</string>
+  <string name="na">Неналично</string>
+  <string name="news">Новини за класа</string>
+  <string name="editNews">Редактирай новини</string>
   <string name="notifyAllStudents">Извести всички ученици</string>
+  <string name="nothingHere">Нищо тук, засега.</string>
+  <string name="newsEdit1">Всички новини за класа в едно поле.</string>
+  <string name="newsEdit2">Добавете последните новини в горната част. Не изтривайте предишни новини.</string>
+  <string name="newsEdit3">Отделни новини с ---
+Ще покаже хоризонтална линия.</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="moveToStart">Направете ход за да започнете</string>
+  <string name="moveToStart">Направете ход, за да започнете</string>
   <string name="youPlayTheWhitePiecesInAllPuzzles">Играете с белите фигури във всички задачи</string>
   <string name="youPlayTheBlackPiecesInAllPuzzles">Играете с черните фигури във всички задачи</string>
   <string name="puzzlesSolved">решени пъзели</string>

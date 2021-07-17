@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+  <string name="lichessCoaches">Lichess треньори</string>
+  <string name="lichessCoach">Lichess треньор</string>
+  <string name="areYouCoach">Дали си добър шах треньор с %s?</string>
+  <string name="nmOrFideTitle" comment="nmOrFideTitle&#10;&#10;Part of sentence &quot;Are you a great chess coach with a NM or FIDE title?&quot;&#10;&#10;The text links to our title verification page: https://lichess.org/help/master">NM или FIDE титла</string>
+  <string name="location">Локация</string>
+  <string name="languages">Езици</string>
+  <string name="rating">Рейтинг</string>
+  <string name="hourlyRate">Цена за час</string>
+  <string name="availability">Достъпност</string>
+  <string name="accepting">Приемащ ученици</string>
+  <string name="aboutMe">За мен</string>
+  <string name="playingExperience">Игрален опит</string>
+  <string name="teachingExperience">Опит като учител</string>
+  <string name="otherExperiences">Други опити</string>
+  <string name="bestSkills">Най-добри способности</string>
+  <string name="youtubeVideos">YouTube видеа</string>
+</resources>

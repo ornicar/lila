@@ -899,9 +899,18 @@
   <string name="noChat">Без чат</string>
   <string name="onlyTeamLeaders">Само организаторите на отбора</string>
   <string name="onlyTeamMembers">Само членовете на отбора</string>
+  <string name="navigateMoveTree">Навигирайте листа на ходовете</string>
+  <string name="mouseTricks">Миши трик</string>
   <string name="toggleLocalAnalysis">Включи/изключи локалния компютърен анализ</string>
   <string name="toggleAllAnalysis">Включи/изключи целия компютърен анализ</string>
   <string name="playComputerMove">Изиграй най-добрия компютърен ход</string>
   <string name="analysisOptions">Параметри на анализа</string>
   <string name="focusChat">Фокусирай текста</string>
+  <string name="showHelpDialog">Показване на този диалогов прозорец за помощ</string>
+  <string name="reopenYourAccount">Отворете отново акаунта Ви</string>
+  <string name="closedAccountChangedMind">Ако сте затворили акаунта Ви, но си промените решението, получавате един шанс да си върнете акаунта.</string>
+  <string name="onlyWorksOnce" comment="onlyWorksOnce&#10;&#10;In relation to reopening a closed account - reopening is only allowed once if you choose to close your account.">Това ще работи само един път.</string>
+  <string name="cantDoThisTwice">Ако затворите акаунта Ви за втори път, няма как да го възстановите.</string>
+  <string name="emailAssociatedToaccount">Имейл адресът асоцииран с този акаунт</string>
+  <string name="sentEmailWithLink">Изпратихме Ви имейл с линк.</string>
 </resources>

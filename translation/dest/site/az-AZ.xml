@@ -439,6 +439,8 @@
   <string name="boardEditor">Lövhə redaktoru</string>
   <string name="setTheBoard">Lövhəni tənzimlə</string>
   <string name="popularOpenings">Məşhur debütlər</string>
+  <string name="endgamePositions">Oyun sonu vəziyəti</string>
+  <string name="chess960StartPosition">Şahmat960 başlanğıc vəziyət: %s</string>
   <string name="startPosition">Başlanğıc pozisiyası</string>
   <string name="clearBoard">Lövhəni təmizlə</string>
   <string name="savePosition">Pozisiyanı yadda saxla</string>
@@ -863,4 +865,8 @@
   <string name="clickToRevealEmailAddress">[E-poçt ünvanını görmək üçün klikləyin]</string>
   <string name="download">Endir</string>
   <string name="welcome">Xoş Gəldiniz!</string>
+  <string name="cancelTournament">Müsabiqəni ləğv et</string>
+  <string name="onlyMembersOfTeam">Yalnız qrup üzvləri</string>
+  <string name="noChat">Söhbətsiz</string>
+  <string name="onlyTeamLeaders">Yalnız qrup lideri</string>
 </resources>

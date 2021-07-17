@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string name="team">Отбор</string>
   <string name="teams">Отбори</string>
   <plurals name="nbMembers">
     <item quantity="one">%s членове</item>
@@ -11,10 +12,43 @@
   <string name="noTeamFound">Не са намерени отбори</string>
   <string name="joinTeam">Присъедини се към отбора</string>
   <string name="quitTeam">Напусни отбора</string>
+  <string name="manuallyReviewAdmissionRequests">Ръчно преглеждайте заявките за прием</string>
+  <string name="manuallyReviewAdmissionRequestsHelp">Ако са отметнати, играчите ще трябва да напишат заявка за присъединяване към отбора, която можете да откажете или приемете.</string>
+  <plurals name="teamLeaders">
+    <item quantity="one">Лидер на отбора</item>
+    <item quantity="other">Лидери на отбора</item>
+  </plurals>
   <string name="teamBestPlayers">Най-добри играчи</string>
   <string name="teamRecentMembers">Скорошни членове</string>
+  <string name="kickSomeone">Премахни някого от отбора</string>
+  <string name="whoToKick">Кого искате да премахнете от отбора?</string>
+  <plurals name="xJoinRequests">
+    <item quantity="one">%s заявка за влизане</item>
+    <item quantity="other">%s заявки за влизане</item>
+  </plurals>
+  <string name="willBeReviewed">Вашата заявка за присъединяване ще бъде прегледана от лидер на отбора.</string>
+  <string name="beingReviewed">Вашата заявка за присъединяване се преглежда от лидер на отбора.</string>
   <string name="subToTeamMessages">Абонирайте се за съобщения от клуба</string>
+  <string name="teamBattle">Отборна битка</string>
+  <string name="teamBattleOverview">Битка между няколко отбори, всеки играч печели точки за своя отбор</string>
+  <string name="teamTournament">Отборен турнир</string>
+  <string name="teamTournamentOverview">Арена турнир, към който могат да се присъединят само членове на Вашия отбор</string>
   <string name="swissTournamentOverview">Швейцарски турнир в който могат да участват само членове на клуба</string>
+  <string name="messageAllMembers">Съобщете на всички членове</string>
+  <string name="messageAllMembersOverview">Изпрати лично съобщение до всеки от отбора</string>
+  <string name="messageAllMembersLongDescription">Изпратете лично съобщение до ВСИЧКИ от отбора.
+Можете да използвате това, за да извикате играчи да се присъединят към турнир или отборна битка.
+Играчите, които не обичат да получават вашите съобщения, могат да напуснат отбора.</string>
+  <string name="teamsIlead">Отбори, които аз ръководя</string>
+  <string name="youWayWantToLinkOneOfTheseTournaments">Може да искате да дадете линк към един от тези предстоящи турнири?</string>
+  <string name="usersWhoCanManageThisTeam">Потребители, които управляват този отбор</string>
+  <string name="leadersChat">Чат на лидерите</string>
+  <string name="closeTeam">Затвори отбора</string>
+  <string name="closeTeamDescription">Затваря отбора завинаги.</string>
+  <string name="teamPassword">Парола на отбора</string>
+  <string name="teamPasswordDescriptionForLeader">(Опционално) Парола, която новите членове трябва да знаят, за да се присъединят към този екип.</string>
+  <string name="incorrectTeamPassword">Грешна отборна парола.</string>
+  <string name="teamAlreadyExists">Този отбор вече съществува.</string>
   <string name="upcomingTourns">Предстоящи турнири</string>
   <string name="completedTourns">Завършени турнири</string>
 </resources>

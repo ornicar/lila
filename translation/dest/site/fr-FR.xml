@@ -910,9 +910,9 @@ Laissez vide pour commencer les parties à partir de la position initiale normal
   <string name="focusChat">Priorité au salon de discussion</string>
   <string name="showHelpDialog">Afficher cette boîte de dialogue</string>
   <string name="reopenYourAccount">Rouvrir votre compte</string>
-  <string name="closedAccountChangedMind">Si vous avez fermé votre compte, mais que vous avez depuis changé d\'avis, vous avez une chance de récupérer votre compte.</string>
+  <string name="closedAccountChangedMind">Si vous avez fermé votre compte, mais que vous avez ensuite changé d\'avis, vous avez une chance de récupérer votre compte.</string>
   <string name="onlyWorksOnce" comment="onlyWorksOnce&#10;&#10;In relation to reopening a closed account - reopening is only allowed once if you choose to close your account.">Cela ne fonctionnera qu\'une seule fois.</string>
-  <string name="cantDoThisTwice">Si vous fermez votre compte une deuxième fois, il n\'y aura aucun moyen de le récupérer.</string>
-  <string name="emailAssociatedToaccount">Adresse e-mail associée au compte</string>
+  <string name="cantDoThisTwice">Si vous fermez votre compte une seconde fois, il n\'y aura aucun moyen de le récupérer.</string>
+  <string name="emailAssociatedToaccount">Adresse électronique associée à votre compte</string>
   <string name="sentEmailWithLink">Nous vous avons envoyé un e-mail avec un lien.</string>
 </resources>

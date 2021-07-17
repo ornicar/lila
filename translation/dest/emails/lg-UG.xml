@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="emailConfirm_subject">%s l\'yelinya ly\'omuzanyi</string>
-  <string name="emailChange_subject">Kakasa Baluwa ya email address empya</string>
+  <string name="emailChange_subject">Kakasa Baluwa ya email address empya, %s</string>
   <string name="welcome_subject">Tukwaniriza ku lichess.org, %s</string>
   <string name="common_note">Eno ebaluwa ekwata ku engeri gyokozesa %s.</string>
   <string name="common_contact">Okututukirira tusaba okozese %s.</string>

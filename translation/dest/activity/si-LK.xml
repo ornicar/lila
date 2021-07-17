@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+  <string name="activity">Massages</string>
+  <string name="hostedALiveStream">Masseges
+Tournaments
+About
+Puzzle racer
+Puzzles
+Puzzle Storm</string>
+</resources>

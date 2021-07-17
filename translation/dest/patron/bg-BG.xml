@@ -43,5 +43,8 @@
   <string name="transactionCompleted">Трансакцията е завършена и квитанция за Вашето дарение бе изпратена на електронната Ви поща.</string>
   <string name="permanentPatron">Сега имате постоянна регистрация като Дарител.</string>
   <string name="checkOutProfile">Проверете страницата на профила си!</string>
+  <string name="nowLifetime">Вече сте Lichess Patron за цял живот!</string>
+  <string name="nowOneMonth">Вече сте Lichess Patron за месец!</string>
+  <string name="downgradeNextMonth">След един месец НЯМА да бъдете таксувани отново и акаунтът ви в Lichess ще се върне към обикновен акаунт.</string>
   <string name="changeCurrency" comment="changeCurrency&#10;&#10;e.g. pay in Euros instead of US dollars.">Промяна на валута</string>
 </resources>
